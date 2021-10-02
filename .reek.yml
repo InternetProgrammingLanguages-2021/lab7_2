@@ -1,3 +1,9 @@
 detectors:
   UtilityFunction:
     enabled: false
+  Attribute:
+    enabled: false
+  InstanceVariableAssumption:
+    enabled: false
+  TooManyStatements:
+    enabled: false
