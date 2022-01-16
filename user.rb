@@ -7,7 +7,6 @@ puts 'Please enter the value of the measurement'
 value = gets.to_i
 puts 'Do you want to describe it? (y/n)'
 is_described = (gets =~ /y/)
-# @type [Measurement]
 measurement = if is_described
                 puts 'Please enter your description'
                 description = gets.strip

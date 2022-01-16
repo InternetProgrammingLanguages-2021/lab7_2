@@ -2,9 +2,8 @@
 
 # Class containing an integer
 class Measurement
-  attr_accessor :value
+  attr_reader :value
 
-  # @param value [Integer]
   def initialize(value)
     @value = value
   end
@@ -20,12 +19,11 @@ end
 
 # Class containing an integer and a string
 class DescribedMeasurement < Measurement
-  attr_accessor :description
+  attr_reader :description
 
-  # @param value [Integer]
-  # @param description [String]
   def initialize(value, description = '')
     super value
+    @value ||= value
     @description = description
   end
 
